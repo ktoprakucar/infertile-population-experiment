@@ -5,7 +5,7 @@ from visualization.Histogram import Histogram
 
 
 class Simulation:
-    def simulate(self, populationSize, infertileSize, maxAge, yearToLive):
+    def simulate(self, populationSize, infertileSize, maxAge, yearsToLive):
         environment = Environment()
         breeding = Breeding()
         life = Life()
@@ -14,7 +14,7 @@ class Simulation:
         populationList = {}
         population = environment.generatePopulation(populationSize, infertileSize)
 
-        for year in range(yearToLive):
+        for year in range(yearsToLive):
             for x in range(len(population)):
                 isActive = breeding.breed(population)
                 # print(len(population))
@@ -23,5 +23,4 @@ class Simulation:
             population = life.die(population, maxAge)
             life.refresh(population)
             populationList[year] = len(population)
-            print("year: {}".format(year))
-        histogram.show(populationList, populationSize, infertileSize, yearToLive, maxAge)
+        histogram.show(populationList, populationSize, infertileSize, yearsToLive, maxAge)
