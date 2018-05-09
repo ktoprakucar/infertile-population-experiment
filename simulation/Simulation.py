@@ -3,8 +3,8 @@ from operation.Breeding import Breeding
 from operation.Life import Life
 from visualization.Histogram import Histogram
 
-class Simulation:
 
+class Simulation:
     def simulate(self, populationSize, infertileSize, maxAge, yearToLive):
         environment = Environment()
         breeding = Breeding()

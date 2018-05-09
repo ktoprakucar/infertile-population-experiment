@@ -1,5 +1,4 @@
 class Person:
-
     def __init__(self, id, age, isInfertile, isBreed):
         self.id = id
         self.age = age
