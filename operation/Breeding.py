@@ -10,8 +10,8 @@ class Breeding:
             secondPerson = self.retrieveSecondPerson(population, firstPerson.id)
 
             if (not (firstPerson.isInfertile or secondPerson.isInfertile) and (firstPerson.age == secondPerson.age)):
-                child = Person(len(population), 0, False, True)
-                # child = Person(len(population), 0, bool(random.getrandbits(1)), False)
+                #child = Person(len(population), 0, False, True)
+                child = Person(len(population), 0, bool(random.getrandbits(1)), False)
                 population.append(child)
                 firstPerson.isBreed = True
                 firstPerson.age = firstPerson.age + 1

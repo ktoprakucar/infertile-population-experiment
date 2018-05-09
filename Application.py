@@ -6,7 +6,7 @@ class Application:
     maxAge = 5
     populationSize = 100
     infertileSize = 0
-    yearsToLive = 5
+    yearsToLive = 25
 
     for x in range(8):
         print("PopulationSize: {}, infertileSize: {}, yearToLive: {}, maxAge: {}".format(populationSize, infertileSize,
