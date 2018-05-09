@@ -24,4 +24,4 @@ class Simulation:
             life.refresh(population)
             populationList[year] = len(population)
             print("year: {}".format(year))
-        histogram.show(populationList)
+        histogram.show(populationList, populationSize, infertileSize, yearToLive, maxAge)

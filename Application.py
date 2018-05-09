@@ -9,4 +9,5 @@ class Application:
     infertileSize = 30
     yearToLive = 10
 
+
     simulation.simulate(populationSize, infertileSize, maxAge, yearToLive)
