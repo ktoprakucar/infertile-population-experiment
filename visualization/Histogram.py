@@ -11,7 +11,7 @@ class Histogram:
         plt.xlabel("Population")
         plt.ylabel("Year")
         plt.savefig(
-            "/Users/toprak.ucar/Desktop/yLisans/introductionToBioinformatics/infertile-population-experiment/results/populationSize:{}-infertileSize:{}-yearsToLive:{}-maxAge:{}(childrenCanBeInfertile).png".format(
+            "/Users/toprak.ucar/Desktop/yLisans/introductionToBioinformatics/infertile-population-experiment/results/populationSize:{}-infertileSize:{}-yearsToLive:{}-maxAge:{}.png".format(
                 populationSize, infertileSize, yearsToLive, maxAge))
         print(populationList)
         # plt.show()
