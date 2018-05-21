@@ -5,7 +5,7 @@ from entity.Person import Person
 
 class Breeding:
     def breed(self, population):
-        if len(list(filter(lambda p: p.isBreed == False, population))) > 1:
+        if len(list(filter(lambda p: p.isBreed == False, population))) > 2:
             firstPerson = self.retrieveFirstPerson(population)
             secondPerson = self.retrieveSecondPerson(population, firstPerson.id)
 
@@ -14,9 +14,7 @@ class Breeding:
                 #child = Person(len(population), 0, bool(random.getrandbits(1)), False)
                 population.append(child)
                 firstPerson.isBreed = True
-                firstPerson.age = firstPerson.age + 1
                 secondPerson.isBreed = True
-                secondPerson.age = secondPerson.age + 1
             return True
         else:
             return False
